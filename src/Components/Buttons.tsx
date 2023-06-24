@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import Button01 from "./Buttons/Button01";
-
-interface IProps {
-  index: number;
-}
+import Button02 from "./Buttons/Button02";
+import Button03 from "./Buttons/Button03";
 
 const Container = styled.main`
   width: 100%;
@@ -17,10 +15,12 @@ const Container = styled.main`
   align-items: center;
 `;
 
-export default function Buttons({ index }: IProps) {
+export default function Buttons() {
   return (
     <Container>
       <Button01 />
+      <Button02 />
+      <Button03 />
     </Container>
   );
 }

@@ -5,8 +5,6 @@ import IndexOfButtons from "./Index/IndexOfButtons";
 interface IProps {
   type: string;
   setType: React.Dispatch<React.SetStateAction<string>>;
-  index: number;
-  setIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
 const Container = styled.header`
@@ -24,7 +22,7 @@ const Select = styled.select`
   margin: 0 10px;
 `;
 
-export default function Header({ type, setType, index, setIndex }: IProps) {
+export default function Header({ type, setType }: IProps) {
   const handleChangeType = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setType((prev) => event.target.value);
   };
@@ -39,9 +37,6 @@ export default function Header({ type, setType, index, setIndex }: IProps) {
         <option value="loaders">loaders</option>
         <option value="inputs">inputs</option>
       </Select>
-      {type === "buttons" && (
-        <IndexOfButtons index={index} setIndex={setIndex} />
-      )}
     </Container>
   );
 }

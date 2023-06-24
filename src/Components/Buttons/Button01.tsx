@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 80%;
-  height: 80vh;
+  min-width: 200px;
+  height: 200px;
   border: 2px solid black;
   border-radius: 20px;
   display: flex;

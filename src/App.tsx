@@ -17,12 +17,11 @@ const Container = styled.main`
 
 function App() {
   const [type, setType] = useState<string>("buttons");
-  const [index, setIndex] = useState<number>(0);
 
   return (
     <Wrapper>
-      <Header type={type} setType={setType} index={index} setIndex={setIndex} />
-      {type === "buttons" && <Buttons index={index} />}
+      <Header type={type} setType={setType} />
+      {type === "buttons" && <Buttons />}
     </Wrapper>
   );
 }
