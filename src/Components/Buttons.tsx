@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Button01 from "./Buttons/Button01";
 import Button02 from "./Buttons/Button02";
 import Button03 from "./Buttons/Button03";
+import Button04 from "./Buttons/Button04";
 
 const Container = styled.main`
   width: 100%;
@@ -21,6 +22,7 @@ export default function Buttons() {
       <Button01 />
       <Button02 />
       <Button03 />
+      <Button04 />
     </Container>
   );
 }
